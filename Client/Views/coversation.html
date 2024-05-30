@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Message</title>
+    <script src="https://cdn.socket.io/4.7.5/socket.io.min.js"
+        integrity="sha384-2huaZvOR9iDzHqslqwpR87isEmrfxqyWOF7hr7BY6KG0+hVKLoEXMPUJw3ynWuhO"
+        crossorigin="anonymous"></script>
+    <script src="../../conversation.js" defer></script>
+    <style>
+        ul {
+            list-style-type: none;
+        }
+    </style>
+</head>
+
+<body>
+    <button id="logout">Logout</button><br>
+    <button id="back">Back</button>
+    <div> <label for="status">Status:</label>
+        <select id="status">
+            <option value="AVAILABLE">Available</option>
+            <option value="BUSY">Busy</option>
+        </select>
+    </div>
+    <ul id="chats"></ul>
+    <input type="text" id="msg">
+    <button id="send-msg">Send</button>
+</body>
+
+</html>
